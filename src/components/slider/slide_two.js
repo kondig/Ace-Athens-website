@@ -1,6 +1,6 @@
 import React from 'react';
 
-let slidePic = require('./sanitarium2.JPG');
+let slidePic = require('./sanitarium-new-2.JPG');
 
 const SlideTwo = (props) => {
   let background = {

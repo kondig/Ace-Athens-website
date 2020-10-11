@@ -16,7 +16,7 @@ const SlideThree = (props) => {
   // }
   return (
     <div className="slide">
-      <div style={background} className="fadeInRight slide-picture" > </div>
+      <div style={background} className="fadeInRight slide-picture"></div>
     </div>
   )
 }

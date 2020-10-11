@@ -8,14 +8,14 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "react": "^16.13.1",
-    "react-burger-menu": "^2.4.2",
+    "react-burger-menu": "^2.8.0",
     "react-dom": "^16.13.1",
-    "react-fontawesome": "^1.6.1",
-    "react-onclickoutside": "^6.7.1",
-    "react-router-dom": "^4.2.2",
-    "react-router-hash-link": "^1.2.0",
+    "react-fontawesome": "^1.7.1",
+    "react-onclickoutside": "^6.9.0",
+    "react-router-dom": "^4.3.1",
+    "react-router-hash-link": "^1.2.2",
     "react-scroll-to-component": "^1.0.2",
-    "react-stickynode": "^1.4.0"
+    "react-stickynode": "^1.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
