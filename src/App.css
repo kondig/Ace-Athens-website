@@ -675,6 +675,9 @@ a.email {
   color: #b73450;
   background-color: #000000;
 }
+.address-text {
+    font-size: 1rem;
+}
 a.phone {
   text-decoration: none;
   color: #b73450;

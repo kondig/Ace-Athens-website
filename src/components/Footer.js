@@ -1,7 +1,7 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
 import logo from '../images/logo-ace-athens.png';
-import map from '../images/map-b73450.jpg';
+import map from '../images/map.png';
 
 const Footer = () => (
   <div className="site-footer">
@@ -9,14 +9,14 @@ const Footer = () => (
       <img src={logo} alt="footer-logo" className="footer-logo" />
     </div>
     <div id="map">
-      <a className="address" href="https://www.google.com/maps/place/Granikou+5,+Marousi+151+25/@38.0409353,23.8021585,17z/data=!3m1!4b1!4m5!3m4!1s0x14a198dc2305db37:0x78ce1c3af3a430f2!8m2!3d38.0409353!4d23.8043472" target="_blank" rel="noopener noreferrer">
-        <img src={map} alt="map of ace athens" className="map" />
+      <a className="address" href="https://goo.gl/maps/jLDkkY5QKussVJXs5" target="_blank" rel="noopener noreferrer">
+        <img src={map} alt="map of Αce Αthens" className="map" />
       </a>
     </div>
     <div  id="contact" >
       <h3>
-        <a className="address" href="https://www.google.com/maps/place/Granikou+5,+Marousi+151+25/@38.0409353,23.8021585,17z/data=!3m1!4b1!4m5!3m4!1s0x14a198dc2305db37:0x78ce1c3af3a430f2!8m2!3d38.0409353!4d23.8043472" target="_blank" rel="noopener noreferrer">
-          <FontAwesome className='address' name='building'spin={false}/> &nbsp; Γρανικού 5, Μαρούσι, Αττική, Ελλάδα
+        <a className="address" href="https://goo.gl/maps/jLDkkY5QKussVJXs5" target="_blank" rel="noopener noreferrer">
+          <FontAwesome className='address' name='building'spin={false}/> &nbsp; <span className="address-text"> Λεωφόρος Κηφισίας 27, Αθήνα, 11523, Αττική</span>
         </a>
         <br/><br/>
         <FontAwesome className='phone' name='phone' spin={false}/> &nbsp; <a className="phone" href="tel:+302106471066">+30 210 64 71 066</a>
