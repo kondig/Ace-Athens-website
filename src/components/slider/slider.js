@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import SlideOne from './slide_one';
-import SlideTwo from './slide_two';
-import SlideThree from './slide_three';
-import RightButton from './rightButton';
-import LeftButton from './leftButton';
-import SlideFour from './slide_four';
-import SlideFive from './slide_five';
-import SlideSix from './slide_six';
-import SlideSeven from './slide_seven';
-import SlideEight from './slide_eight';
-import SlideNine from './slide_nine';
+import {SlideOne} from './slide_one';
+import {SlideTwo} from './slide_two';
+import {SlideThree} from './slide_three';
+import {RightButton} from './rightButton';
+import {LeftButton} from './leftButton';
+import {SlideFour} from './slide_four';
+import {SlideFive} from './slide_five';
+import {SlideSix} from './slide_six';
+import {SlideSeven} from './slide_seven';
+import {SlideEight} from './slide_eight';
+import {SlideNine} from './slide_nine';
 
 
 

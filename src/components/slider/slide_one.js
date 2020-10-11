@@ -22,4 +22,4 @@ const SlideOne = (props) => {
   )
 }
 
-export default SlideOne ;
+export {SlideOne} ;

@@ -9,4 +9,4 @@ const RightButton = (props) => {
   )
 }
 
-export default RightButton;
+export {RightButton};

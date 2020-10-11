@@ -21,4 +21,4 @@ const SlideSix = (props) => {
   )
 }
 
-export default SlideSix;
+export {SlideSix};

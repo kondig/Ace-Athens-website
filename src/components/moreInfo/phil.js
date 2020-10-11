@@ -3,7 +3,7 @@ import kp from './kp1.jpg';
 
 const Phil = ({children}) => (
   <div className="pop_page">
-    <div className="sub_flex">
+    <div className="sub_flex_new">
       <div className="flexitem_kp">
         <img src={kp} alt="mugshot" className="kp-mugshot" />
       </div>

@@ -41,10 +41,10 @@
   .map { height: 145px !important}
   .address {font-size:16px !important;}
   .about, .mastos, .other {width: 100%; height: 650px !important; }
-  .about_text {height:1300px !important;}
+  /* .about_text {height:1300px !important;} */
   .about_title {font-size: 35px !important }
   .mastos_text {height:1500px !important;}
-  .other_text {height:2900px !important;}
+  .other_text {height:2500px !important;}
   .about_text p, .mastos_text p, .other_text p {text-align:left !important; padding:30px 20px 10px 20px !important }
   .services_text p {font-size: 20px !important; text-align:center !important; padding:30px 0px 10px 0px !important }
   .about_text ul {width:70% !important; margin:0px 30px !important; padding:10px 0px 0px 20px !important;}
@@ -179,6 +179,10 @@
   .burger-menu { display: none !important;}
   .bm-burger-button {display:none;}
   .mainpic {height:700px !important;}
+}
+.MuiDialog-paperWidthSm {
+    width: 90vw !important;
+    max-width: 95vw !important;
 }
 .burger-menu {
   position: fixed;
@@ -675,6 +679,9 @@ a.email {
   color: #b73450;
   background-color: #000000;
 }
+.icon-angle {
+    color: #b73450;
+}
 .address-text {
     font-size: 1rem;
 }
@@ -819,7 +826,7 @@ a.facebook {
 .sanitarium_gallery {
   height: 60px;
   text-align: left;
-  padding-left: 100px;
+  padding: 20px 20px 20px 100px;
   font-size: 40px;
   color: #B73450;
 }
@@ -1069,8 +1076,7 @@ a.facebook {
   position: relative;
   padding-bottom: 50px;
 }
-.sub_page p,
-.pop_page p {
+.sub_page p {
   width:70%;
   /* border:1px solid purple; */
   padding: 10px 15px;
@@ -1079,8 +1085,14 @@ a.facebook {
   left:15%;
   font-size: 16px;
   line-height: 20px;
-
 }
+.pop_page p {
+  padding: 10px 15px;
+  text-align: justify;
+  position: relative;
+  font-size: 1rem;
+}
+
 .sub_page h1,
 .pop_page h1 {
   color: #606062;
@@ -1095,8 +1107,7 @@ a.facebook {
   text-align: center;
   font-size:30px;
 }
-.sub_page h3,
-.pop_page h3 {
+.sub_page h3 {
   color: #b73450;
   text-align: left;
   padding: 10px 150px 10px 10px;
@@ -1104,6 +1115,13 @@ a.facebook {
   width: 50%;
   position: relative;
   left: 15%;
+}
+.pop_page h3 {
+  color: #b73450;
+  text-align: left;
+  border-bottom: 1px solid #b73450;
+  width: 50%;
+  position: relative;
 }
 .sub_page h4,
 .pop_page h4 {
@@ -1132,8 +1150,7 @@ a.facebook {
   color: #606062;
   font-weight: 700;
 }
-.sub_page ul,
-.pop_page ul {
+.sub_page ul {
   width:70%;
   /* border:1px solid purple; */
   padding: 5px 40px 15px 40px;
@@ -1142,8 +1159,16 @@ a.facebook {
   left:15%;
   list-style-type: square;
 }
-.sub_page ol,
+.pop_page ul {
+  text-align: justify;
+  position: relative;
+  list-style-type: square;
+}
 .pop_page ol {
+  text-align: justify;
+  position: relative;
+}
+.sub_page ol {
   width:70%;
   padding: 15px 40px;
   text-align: justify;
@@ -1182,6 +1207,14 @@ a.facebook {
   position: relative;
   left: 16%;
   /* border: 1px solid black; */
+}
+.sub_flex_new {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: relative;
+  padding: 10px 15px;
 }
 .sub_flex p {
   text-align: left;
@@ -1225,7 +1258,8 @@ a.facebook {
   transform: translateY(-20px);
 }
 .kp-mugshot {
-  width: 240px;
+  /* width: 240px; */
+  width: 250px;
   padding: 25px 0px 0px 0px;
   /* border: 1px solid black; */
 }

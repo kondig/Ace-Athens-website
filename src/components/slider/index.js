@@ -6,12 +6,4 @@ import { LeftButton } from './leftButton';
 
 import { Slider } from './slider';
 
-export {
-  SlideOne,
-  SlideTwo,
-  SlideThree,
-  RightButton,
-  LeftButton
-};
-
-export { Slider };
+export { Slider, RightButton, LeftButton };

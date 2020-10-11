@@ -17,4 +17,4 @@ const SlideNine = (props) => {
   )
 }
 
-export default SlideNine;
+export {SlideNine};

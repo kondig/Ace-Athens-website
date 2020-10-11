@@ -9,4 +9,4 @@ const LeftButton = (props) => {
   )
 }
 
-export default LeftButton;
+export {LeftButton};
