@@ -4,7 +4,7 @@ import Sticky from 'react-stickynode';
 // import scrollToComponent from 'react-scroll-to-component';
 import {Link} from 'react-router-dom';
 import {Slider} from './slider/slider';
-import {HostPopout} from './popunder';
+// import {HostPopout} from './popunder';
 import {Modal} from './popunder/modal';
 import {Phil} from './moreInfo';
 import {Mastos} from './moreInfo';
