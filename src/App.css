@@ -40,6 +40,7 @@
   }
   .map { height: 145px !important}
   .address {font-size:16px !important;}
+  .paragraph { font-size: 1.3rem !important;  }
   .about, .mastos, .other {width: 100%; height: 650px !important; }
   /* .about_text {height:1300px !important;} */
   .about_title {font-size: 35px !important }
@@ -654,7 +655,7 @@ h5 {
   text-align: left;
 }
 .paragraph {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #b73450;
 }
 .footer-logo {
@@ -922,6 +923,7 @@ a.facebook {
 }
 .MuiTypography-body1 { font-size: 0.9rem !important }
 .MuiTypography-h5 { font-size: 1rem !important; }
+.MuiTypography-colorTextSecondary { color: #B73450 !important }
 .services_text strong {
   font-weight: bold;
   font-size: 25px;

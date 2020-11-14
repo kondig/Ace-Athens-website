@@ -2,20 +2,19 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
+// import CardMedia from '@material-ui/core/CardMedia';
+// import CardActions from '@material-ui/core/CardActions';
+// import CardContent from '@material-ui/core/CardContent';
+// import IconButton from '@material-ui/core/IconButton';
+// import Typography from '@material-ui/core/Typography';
 // import { red } from '@material-ui/core/colors';
-import Collapse from '@material-ui/core/Collapse';
+// import Collapse from '@material-ui/core/Collapse';
 // import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import clsx from 'clsx';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import clsx from 'clsx';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faAirbnb } from '@fortawesome/free-brands-svg-icons';
-import { faLink } from '@fortawesome/free-solid-svg-icons'
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
+// import { faLink } from '@fortawesome/free-solid-svg-icons'
+// import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import {Link} from 'react-router-dom';
 
 
@@ -31,7 +30,9 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     [theme.breakpoints.down('sm')]: {
-      width: 200,
+      width: 320,
+      height: 170,
+      margin: '15px 0px',
       display:'flex',
       flexDirection: 'column',
       justifyContent:'center',
@@ -87,11 +88,10 @@ const useStyles = makeStyles((theme) => ({
 
 function Stone(props) {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
+  // const [expanded, setExpanded] = React.useState(false);
+  // const handleExpandClick = () => {
+  //   setExpanded(!expanded);
+  // };
   return (
     <Card className={classes.root}>
         {/*<a href={props.link} target="_blank" rel="noopener noreferrer" className="link" >

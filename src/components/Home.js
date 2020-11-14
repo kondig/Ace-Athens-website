@@ -2,7 +2,7 @@ import React, {useRef} from 'react'
 import FontAwesome from 'react-fontawesome';
 import Sticky from 'react-stickynode';
 // import scrollToComponent from 'react-scroll-to-component';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import {Slider} from './slider/slider';
 // import {HostPopout} from './popunder';
 import {Modal} from './popunder/modal';
@@ -71,7 +71,6 @@ const Home = () => {
             <p className='paragraph'> Εφαρμογές του Ιατρείου μας </p>
             <div className="services-flex">
                 <Service title='Αναίμακτη μεσοθεραπεία και μη επεμβατικές θεραπείες προσώπου και σώματος' link='/non-invasive-therapies' />
-
                 <Service title='PRP και PRF θεραπείες προσώπου' link='/slightly-invasive-therapies'/>
                 <Service title='Λιπομεταφορά' link='/limbs'/>
                 <Service title='Ενδοϊστική Laser λιπόλυση' link='/limbs'/>
@@ -96,7 +95,7 @@ const Home = () => {
           {/*<HostPopout title={'H φιλοσοφία μου'} text={<Phil />} buttonname={'H φιλοσοφία μου'} /> */}
           <p className='paragraph'>Το ιατρείο - εξοπλισμός</p>
           <Slider />
-          <div className='mainpic-divider'></div>
+          {/*<div className='mainpic-divider'></div>*/}
           <div className="mastos" id="mastos">
             <section className="mastos_title"> ΜΑΣΤΟΣ </section>
           </div>
