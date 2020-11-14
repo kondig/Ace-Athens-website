@@ -658,6 +658,10 @@ h5 {
     font-size: 2rem;
     color: #b73450;
 }
+.modal-text-b {
+    font-weight:700;
+    color: #b73450;
+}
 .footer-logo {
   position: absolute;
   left: 2%;
