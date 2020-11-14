@@ -9,6 +9,8 @@ import {Modal} from './popunder/modal';
 import {Phil} from './moreInfo';
 import {Mastos} from './moreInfo';
 
+import {Service} from './items/service';
+
 const scrollUpToRef = (ref) => window.scrollTo(0, ref.current.offsetTop-400)
 const scrollDownToRef = (ref) => window.scrollTo(0, 900)
 
@@ -26,20 +28,24 @@ const Home = () => {
           <div className='mainpic-divider'></div>
           <div className="site-page">
             <div className="about" id="About_Us" ref={midRef}>
-              <section className="about_title"> Ace Athens<br/><span className="about_subtitle"> Aesthetics Center</span><br/><span className="about_under_subtitle">Πλαστική, Επανορθωτική και Αισθητική Χειρουργική</span> </section>
+              <section className="about_title"> Ace Athens<br/><span className="about_subtitle"> Aesthetics Center</span><br/><span className="about_under_subtitle">
+                Πλαστική, Επανορθωτική και Αισθητική Χειρουργική</span>
+              </section>
             </div>
             <div className="about_text" >
               <p> <strong> Η Εταιρεία </strong> <br/><br/>
-                  Η Ace Athens - Aesthetics Center εδρεύει στην Αθήνα και δραστηριοποιείται στην Ελλάδα, Κύπρο και Αραβικό Κόσμο. Επιστημονικός Διευθυντής της Εταιρείας είναι ο πλαστικός χειρουργός κ. Κώστας Παπαιωάννου
-                  με πολυετή εμπειρία στο χώρο της Πλαστικής, Επανορθωτικής και Αισθητικής Χειρουργικής. Εργάστηκε στα Νοσοκομεία Γ.Ο.Ν.Κ « Αγ. Ανάργυροι» και Ογκολογικό Νοσοκομείο 6ο ΙΚΑ «Γ. Γεννηματάς» από το 1998 έως
-                  το 2016, ενώ για το διάστημα 2015 – 2017, ως Διευθυντής τμήματος Πλαστικής Χειρουργικής σε Νοσοκομείο της Σαουδ. Αραβίας. Επιπλέον από το 1999 έως σήμερα δραστηριοποιείται και στον ιδιωτικό τομέα
-                  συνεργαζόμενος με μεγάλα ιδιωτικά Νοσοκομεία της Αθήνας. Σήμερα συνεργάζεται με το Νοσοκομείο Metropolitan General (πρώην ΙΑΣΩ General).
-                  <br/><br/><br/>
-                  H εταιρεία Ace Athens στεγάζεται στην Αθήνα, Κηφισιάς 27Α, σε έναν ειδικά διαμορφωμένο χώρο, για την εφαρμογή των εξειδικευμένων εφαρμογών της πλαστικής, επανορθωτικής και αισθητικής χειρουργικής.
-                  Μία ομάδα πλαστικών χειρουργών σε συνεργασία με εξειδικευμένους ιατρούς στην αντιγήρανση, διατροφολόγους και αισθητικούς διαμορφώνει εξατομικευμένα πρωτόκολλα πάνω στην αντιγήρανση και την αναγεννητική
-                  ιατρική, συνδυάζοντας επεμβατικές και ελάχιστα επεμβατικές μεθόδους.
-                  <br/><br/><br/>
-                  Πυλώνες της καθημερινής ιατρικής πρακτικής και συνεργασίας είναι:
+                Η Ace Athens - Aesthetics Center εδρεύει στην Αθήνα και δραστηριοποιείται στην Ελλάδα, Κύπρο και Αραβικό Κόσμο. Επιστημονικός Διευθυντής της Εταιρείας είναι ο πλαστικός
+                χειρουργός κ. Κώστας Παπαιωάννου με πολυετή εμπειρία στο χώρο της Πλαστικής, Επανορθωτικής και Αισθητικής Χειρουργικής. Εργάστηκε στα Νοσοκομεία Γ.Ο.Ν.Κ « Αγ. Ανάργυροι»
+                και Ογκολογικό Νοσοκομείο 6 ο ΙΚΑ «Γ. Γεννηματάς» από το 1998 έως το 2016, ενώ για το διάστημα 2015 – 2017, ως Διευθυντής τμήματος Πλαστικής Χειρουργικής σε Νοσοκομείο
+                της Σαουδ. Αραβίας. Επιπλέον από το 1999 έως σήμερα δραστηριοποιείται και στον ιδιωτικό τομέα συνεργαζόμενος με μεγάλα ιδιωτικά Νοσοκομεία της Αθήνας. Σήμερα συνεργάζεται
+                με το Νοσοκομείο Metropolitan General (πρώην ΙΑΣΩ General) στην Αθήνα, με το Κέντρο Poseidonia HealthCare στη Λάρνακα της Κύπρου και τον όμιλο ALHOKAIL Polyclinics στο
+                Κόμπαρ της Σαουδικής Αραβίας και το Μπαχρέιν.
+                <br/><br/><br/>
+                H εταιρεία Ace Athens στεγάζεται στην Αθήνα, Κηφισιάς 27 Α , σε έναν ειδικά διαμορφωμένο χώρο, για την εφαρμογή των εξειδικευμένων εφαρμογών της πλαστικής, επανορθωτικής
+                και αισθητικής χειρουργικής. Μία ομάδα πλαστικών χειρουργών σε συνεργασία με εξειδικευμένους ιατρούς στην αντιγήρανση, διατροφολόγους και αισθητικούς διαμορφώνει εξατομικευμένα
+                πρωτόκολλα πάνω στην αντιγήρανση και την αναγεννητική ιατρική, συνδυάζοντας επεμβατικές και ελάχιστα επεμβατικές μεθόδους.
+                <br/><br/>
+                Πυλώνες της καθημερινής ιατρικής πρακτικής και συνεργασίας είναι:
               </p>
               <ul>
                 <li>Βαθιά γνώση του αντικειμένου μας</li>
@@ -49,16 +55,46 @@ const Home = () => {
                 <li>Συνεχής επικοινωνία με τους ασθενείς μας</li>
                 <li>Δημιουργία και διατήρηση άμεσου και φιλικού περιβάλλοντος για τους ενδιαφερόμενους και ασθενείς μας</li>
               </ul>
-              <p> <u>Πλαστικοί Χειρουργοί</u> <br/>
+              <p> <u>Πλαστικοί Χειρουργοί</u> <br/><br/>
                   Κώστας Παπαϊωάννου, MD, MSc, Επιστημονικός Διευθυντής <br/><br/>
-                  <u>Συνεργάτες</u> <br/>
-                  Σωτήρης Γιωτάκης, MD <br/>
-                  Αρχοντούλα Ξιφαρά, MD
+                  <u>Συνεργάτες</u> <br/><br/>
+                  Κώστας Πάτσης, MD <br/><br/>
+                  Poseidonia Healthcare <br/>
+                  <span>47a Eleftherias Avenue/Aradippou, Larnaca, 7102, Cyprus</span><br/><br/>
+                  Alcokail Specialized Polyclinic <br/>
+                  <span>King Faisal Road, Al Yarmouk, Al Khobar 34422 7063, Saudi Arabia</span>
               </p>
               <Modal modaltitle={'Η ΦΙΛΟΣΟΦΙΑ ΜΟΥ'} title={'Η φιλοσοφία μου'} text={<Phil />} />
           </div>
+          <div className="services" id="Services"> </div>
+          <section className="services_text">
+            <p className='paragraph'> Εφαρμογές του Ιατρείου μας </p>
+            <div className="services-flex">
+                <Service title='Αναίμακτη μεσοθεραπεία και μη επεμβατικές θεραπείες προσώπου και σώματος' link='/non-invasive-therapies' />
+
+                <Service title='PRP και PRF θεραπείες προσώπου' link='/slightly-invasive-therapies'/>
+                <Service title='Λιπομεταφορά' link='/limbs'/>
+                <Service title='Ενδοϊστική Laser λιπόλυση' link='/limbs'/>
+                <Service title='Ενέσιμη λιπόλυση, κρυολιπόλυση και Hifu λιπόλυση' link='/limbs'/>
+                <Service title='Θεραπεία κυτταρίτιδας' link='/limbs'/>
+                <Service title='Θεραπεία ουλών ακμής' link='/slightly-invasive-therapies'/>
+                <Service title='Fractional Laser για αναγέννηση δέρματος προσώπου' link='/slightly-invasive-therapies'/>
+                <Service title='Μη χειρουργικό lifting προσώπου και λαιμού με τεχνολογία Hifu' link='/hifu'/>
+                <Service title='Φωτοαναγέννηση δέρματος προσώπου με τεχνολογία IPL' link='/slightly-invasive-therapies'/>
+                <Service title='Θεραπεία καλοήθων δερματικών βλαβών και μυρμηκιών με Laser Διοξειδίου του Άνθρακα' link='' />
+                <Service title='Αποτρίχωση με Laser' link='' />
+                <Service title='Χαρτογράφηση σπίλων' link='/nevi&melanomas'/>
+                <Service title='Χειρουργική αφαίρεση και αποκατάσταση δερματικού καρκίνου και μελανώματος' link='/skin-cancer'/>
+                <Service title='Αποκατάσταση μαστού μετά μαστεκτομή' link='/breast-restoration'/>
+                <Service title='Αυξητική, μειωτική και ανόρθωση μαστού. Γυναικομαστία' link='/torso'/>
+                <Service title='Θεραπεία μετατραυματικών και μετεγχειρητικών ουλών' link='/scars'/>
+                <Service title='Μετεγκαυματικές ουλές' link='/burn'/>
+                <Service title='Ελάχιστα επεμβατικές θεραπείες' link='/slightly-invasive-therapies' subheader='με τη χρήση microneedling, fillers, Botox, νημάτων και μεσοθεραπείας' />
+                <Service title='Αισθητικές επεμβάσεις προσώπου και σώματος' subheader='Βλεφαροπλαστική, Ωτοπλαστική, Ρινοπλαστική, Πωγωνοπλαστική, Lifting προσώπου και λαιμού, Κοιλιοπλαστική, Λιποαναρρόφηση, lifting μηρών και γλουτών' link='/face-surgery'/>
+            </div>
+          </section>
           {/*<HostPopout title={'H φιλοσοφία μου'} text={<Phil />} buttonname={'H φιλοσοφία μου'} /> */}
-          <div className='sanitarium_gallery'> Το ιατρείο - εξοπλισμός   </div>
+          <p className='paragraph'>Το ιατρείο - εξοπλισμός</p>
           <Slider />
           <div className='mainpic-divider'></div>
           <div className="mastos" id="mastos">
@@ -76,70 +112,7 @@ const Home = () => {
           </section>
 
           {/* <HostPopout title={''} text={<Mastos />} buttonname={'Περισσότερα'} /> */}
-          <div className="services" id="Services"> </div>
-            <section className="services_text">
-              <p> Εφαρμογές του Ιατρείου μας </p>
-                  <ul>
-                    <Link className="applications-link" to={`/non-invasive-therapies`}>
-                      <li>Αναίμακτη μεσοθεραπεία και μη επεμβατικές θεραπείες προσώπου και σώματος</li>
-                    </Link>
-                    <Link className="applications-link" to={`/slightly-invasive-therapies`}>
-                      <li className="gridItem-2">Ελάχιστα επεμβατικές θεραπείες με τη χρήση microneedling, fillers, Botox, νημάτων και μεσοθεραπείας</li>
-                    </Link>
-                    <Link className="applications-link" to={`/slightly-invasive-therapies`}>
-                      <li>PRP και PRF θεραπείες προσώπου</li>
-                    </Link>
-                    <Link className="applications-link" to={`/limbs`}>
-                      <li>Λιπομεταφορά</li>
-                    </Link>
-                    <Link className="applications-link" to={`/limbs`}>
-                      <li>Ενδοϊστική Laser λιπόλυση</li>
-                    </Link>
-                    <Link className="applications-link" to={`/limbs`}>
-                      <li>Ενέσιμη λιπόλυση, κρυολιπόλυση και hifu λιπόλυση</li>
-                    </Link>
-                    <Link className="applications-link" to={`/limbs`}>
-                      <li>Θεραπεία κυτταρίτιδας</li>
-                    </Link>
-                    <Link className="applications-link" to={`/slightly-invasive-therapies`}>
-                      <li>Θεραπεία ουλών ακμής</li>
-                    </Link>
-                    <Link className="applications-link" to={`/slightly-invasive-therapies`}>
-                      <li>Fractional Laser για αναγέννηση δέρματος προσώπου</li>
-                    </Link>
-                    <Link className="applications-link" to={`/hifu`}>
-                      <li>Μη χειρουργικό lifting προσώπου και λαιμού με τεχνολογία Hifu</li>
-                    </Link>
-                    <Link className="applications-link" to={`/slightly-invasive-therapies`}>
-                      <li>Φωτοαναγέννηση δέρματος προσώπου με τεχνολογία IPL</li>
-                    </Link>
-                    <li>Θεραπεία καλοήθων δερματικών βλαβών και μυρμηκιών με Laser Διοξειδίου του Άνθρακα</li>
-                    <li>Αποτρίχωση με Laser</li>
-                    <Link className="applications-link" to={`/nevi&melanomas`}>
-                      <li>Χαρτογράφηση σπίλων</li>
-                    </Link>
-                    <Link className="applications-link" to={`/skin-cancer`}>
-                      <li>Χειρουργική αφαίρεση και αποκατάσταση δερματικού καρκίνου και μελανώματος</li>
-                    </Link>
-                    <Link className="applications-link" to={`/breast-restoration`}>
-                      <li>Αποκατάσταση μαστού μετά μαστεκτομή</li>
-                    </Link>
-                    <Link className="applications-link" to={`/torso`}>
-                      <li>Αυξητική, μειωτική και ανόρθωση μαστού. Γυναικομαστία</li>
-                    </Link>
-                    <Link className="applications-link gridItem-18" to={`/face-surgery`}>
-                      <li className="">Αισθητικές επεμβάσεις προσώπου και σώματος όπως Βλεφαροπλαστική, Ωτοπλαστική, Ρινοπλαστική, Πωγωνοπλαστική, Lifting προσώπου και λαιμού, Κοιλιοπλαστική, Λιποαναρρόφηση, lifting μηρών και γλουτών</li>
-                    </Link>
-                    <Link className="applications-link" to={`/scars`}>
-                      <li>Θεραπεία μετατραυματικών και μετεγχειρητικών ουλών</li>
-                    </Link>
-                    <Link className="applications-link" to={`/burn`}>
-                      <li>Μετεγκαυματικές ουλές</li>
-                    </Link>
 
-                  </ul>
-
-            </section>
           <div className="other" > </div>
             <section className="other_text">
               <p> <strong> Πλαστική χειρουργική και Υπερβαρικό οξυγόνο </strong> <br/><br/>

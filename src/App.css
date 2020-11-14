@@ -46,14 +46,13 @@
   .mastos_text {height:1500px !important;}
   .other_text {height:2500px !important;}
   .about_text p, .mastos_text p, .other_text p {text-align:left !important; padding:30px 20px 10px 20px !important }
-  .services_text p {font-size: 20px !important; text-align:center !important; padding:30px 0px 10px 0px !important }
   .about_text ul {width:70% !important; margin:0px 30px !important; padding:10px 0px 0px 20px !important;}
   .services_text {
-    height: 2750px !important;
+    /* height: 2750px !important; */
     width: 100% !important;
   }
   .services_text ul {
-    height: 2750px !important;
+    /* height: 2750px !important; */
     display: flex !important;
     flex-wrap: wrap !important;
     /* justify-content: space-evenly !important; */
@@ -111,7 +110,7 @@
 @media only screen and (min-width:481px) and (max-width: 1280px){
   .menu {display:none;}
   .mainpic {height:400px !important;}
-  .about_text {height:900px !important;}
+  /* .about_text {height:900px !important;} */
   .about_title {font-size: 40px !important }
   .mastos_text {height:900px !important;}
   .other_text {height:1600px !important;}
@@ -142,13 +141,8 @@
     padding-top:20px !important;
   }
   .address {font-size:16px !important;}
-  .services_text p {font-size: 20px !important; text-align:center !important; padding:30px 0px 10px 0px !important }
   .sub_page {  padding-bottom: 900px !important; padding-left: 10px !important; }
   /* .about_text ul {width:70% !important; margin:0px 0px !important; padding:10px 0px 0px 20px !important; border:1px solid blue !important} */
-  .services_text {
-    height: 1200px !important;
-    width: 100% !important;
-  }
   .services_text ul {
     height: 1200px !important;
     /* display: flex !important;
@@ -659,7 +653,10 @@ h5 {
   padding: 2px;
   text-align: left;
 }
-
+.paragraph {
+    font-size: 1.5rem;
+    color: #b73450;
+}
 .footer-logo {
   position: absolute;
   left: 2%;
@@ -762,7 +759,7 @@ a.facebook {
 .about_text {
   background-color: #606062;
   /* height: 650px; */
-  height:100%;
+  height: 100%;
   width: 100%;
   padding: 20px 0px;
   position: relative;
@@ -798,6 +795,9 @@ a.facebook {
 .about_text u {
   color: #d26079;
 }
+.about_text span {
+    font-size: 13px;
+}
 .mastos_text u {
   color: #B73450;
 }
@@ -827,7 +827,7 @@ a.facebook {
   height: 60px;
   text-align: left;
   padding: 20px 20px 20px 100px;
-  font-size: 40px;
+  font-size: 1.5rem;
   color: #B73450;
 }
 .mainpic-divider {
@@ -894,7 +894,8 @@ a.facebook {
   letter-spacing: 0.2em;
 }
 .services {
-  min-height: 400px;
+  min-height: 200px;
+  height:100%;
   background-image: url('./images/applications-plastic-surgery.png');
   background-attachment: fixed;
   background-position: center;
@@ -905,11 +906,22 @@ a.facebook {
 }
 .services_text {
   background-color: #fff;
-  height: 590px;
   width: 100%;
+  height: 100%;
   position: relative;
   /* border-top: 1px solid #606062; */
 }
+.service-item { margin: 20px; }
+.services-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #606062;
+    padding:30px 10px;
+}
+.MuiTypography-body1 { font-size: 0.9rem !important }
+.MuiTypography-h5 { font-size: 1rem !important; }
 .services_text strong {
   font-weight: bold;
   font-size: 25px;
@@ -918,17 +930,6 @@ a.facebook {
   left: 20%;
   top: 10%; */
   text-align: center;
-}
-.services_text p {
-  /*border: 1px solid black;*/
-  font-size: 20px;
-  color: #B73450;
-  /* position: absolute;
-  left: 20%;
-  top: 15%;
-  width: 60%; */
-  padding: 30px 100px 5px 100px;
-  text-align: justify;
 }
 .services_text ul {
   background-color: #606062;
