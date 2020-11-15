@@ -73,6 +73,7 @@
   }
   .applications-link:hover {
   }
+  .divider { height: 40px !important; }
   .popout-button { transform: translateY(-150%) !important; }
   .menu {display:none;}
   .mainpic {height: 400px !important;}
@@ -835,12 +836,8 @@ a.facebook {
   font-size: 1.5rem;
   color: #B73450;
 }
-.mainpic-divider {
+.divider {
   height: 100px;
-  text-align: left;
-  padding-left: 100px;
-  font-size: 24px;
-  color: #B73450;
 }
 .mastos {
   min-height: 700px;

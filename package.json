@@ -1,6 +1,6 @@
 {
   "name": "md",
-  "version": "2.1.0",
+  "version": "1.4.0",
   "private": true,
   "devDependencies": {
     "react-scripts": "^3.4.3"
