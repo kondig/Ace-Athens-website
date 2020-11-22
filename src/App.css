@@ -81,7 +81,7 @@
   .sub_page {  padding-bottom: 900px !important; padding-left: 10px !important; }
   .pop_page {   padding: 0px !important; padding-bottom: 20px !important;}
   .sub_page p {left:15% !important; padding:15px 5px !important; text-align:left !important;}
-  .pop_page p {width: 100% !important; left:1% !important; padding:15px 5px !important; text-align:left !important; }
+  .pop_page p {width: 100% !important; text-align:left !important; }
   .sub_page h3, .pop_page h3 { padding: 10px !important; width: 80% !important;  left: 5% !important;  }
   .sub_page h4 { padding-left: 0 !important;}
   .sub_page ol {width:60% !important; text-align: left !important; }
@@ -104,6 +104,7 @@
   .slide-picture { height: 320px !important}
   .popform { top:13% !important }
   .popform-open { width: 60px !important; padding-left: 2px !important; }
+  .flexitem_text { padding-left: 0 !important }
   .flexitem_text_w_picture_wide,
   .flexitem_text_w_picture_long,
   .flexitem_text_w_picture
@@ -369,34 +370,29 @@
 }
 .menu li::before,
 .menu li::after {
-  content: '';
-  position: absolute;
-  height: 1px;
-  width: 100%;
-  opacity: 0;
-  background-color: #b73450;
-  /*transform: translateY(-10px);*/
-  border: 0.5px solid #b73450;
-  transition: opacity 2s;
-  transition: transform 2s;
-  left: 0;
-  /*box-sizing: border-box;*/
-}
-.menu li::before {
-  top: -5%;
-  transform: translateY(50px);
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #b73450;
+    box-shadow:
+     -1px -1px 5px 0px #fff,
+     7px 7px 20px 0px #0003,
+     4px 4px 5px 0px #0002;
+    transition:400ms ease all;
 }
 .menu li::after {
-  bottom: -5%;
-  transform: translateY(-50px);
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
 }
-.menu li:hover::before {
-  opacity: 1;
-  transform: translateY(40px);
-}
+.menu li:hover::before,
 .menu li:hover::after {
-  opacity: 1;
-  transform: translateY(-40px);
+    width:100%;
+    transition:800ms ease all;
 }
 .mainpic {
   background-image: url('./images/mdroomwithmd.jpg');
@@ -925,6 +921,8 @@ a.facebook {
 .MuiTypography-body1 { font-size: 0.9rem !important }
 .MuiTypography-h5 { font-size: 1rem !important; }
 .MuiTypography-colorTextSecondary { color: #B73450 !important }
+.MuiDialog-paper { margin: 10px !important }
+.MuiDialog-paperWidthSm { width: 95vw !important; max-width: 99vw !important}
 .services_text strong {
   font-weight: bold;
   font-size: 25px;
@@ -1091,10 +1089,7 @@ a.facebook {
   line-height: 20px;
 }
 .pop_page p {
-  padding: 10px 15px;
   text-align: justify;
-  position: relative;
-  font-size: 1rem;
 }
 
 .sub_page h1,
@@ -1218,7 +1213,7 @@ a.facebook {
   flex-wrap: wrap;
   align-items: flex-start;
   position: relative;
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
 }
 .sub_flex p {
   text-align: left;
