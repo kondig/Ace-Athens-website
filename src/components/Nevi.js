@@ -28,7 +28,7 @@ const Nevi = () => {
     return (
       <div className="sub_page">
       <ScrollToTopOnMount/>
-        <h1 ref={topRef}> ΣΠΙΛΟΙ ή ΕΛΙΕΣ ( Nevi or moles ) </h1>
+        <h1 ref={topRef}> ΣΠΙΛΟΙ ή ΕΛΙΕΣ (nevi or moles) </h1>
         <Popform title={`Ace Athens`} subtitle={'Ρωτήστε την'} openFormButton={'Ρωτήστε μας'} />
         <p>
           Οι σπίλοι ή ελιές είναι καλοήθεις μορφολογικοί σχηματισμοί του δέρματος. Μπορεί να εμφανιστούν από την γέννηση ή τις πρώτες μέρες της ζωής ( συγγενείς ) ή αργότερα κατά

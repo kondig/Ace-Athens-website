@@ -14,8 +14,6 @@
 }
 @media only screen and (max-width: 480px) {
   .menu {width: 100%;}
-   ul {width: 100%;}
-  /* .App {width: 100%;} */
   .App-Header {width: 100%;}
   .dropdown-content {width: 100%;}
   .site-page {width: 100%;}
@@ -79,13 +77,13 @@
   .mainpic {height: 400px !important;}
   .innov-therapies p {text-align:left !important}
   .sub_page {  padding-bottom: 900px !important; padding-left: 10px !important; }
-  .pop_page {   padding: 0px !important; padding-bottom: 20px !important;}
-  .sub_page p {left:15% !important; padding:15px 5px !important; text-align:left !important;}
+  .pop_page {  padding: 0px !important; padding-bottom: 20px !important;}
+  .sub_page p {margin: 0 !important; padding:15px 10px !important; text-align:left !important;}
   .pop_page p {width: 100% !important; text-align:left !important; }
-  .sub_page h3, .pop_page h3 { padding: 10px !important; width: 80% !important;  left: 5% !important;  }
-  .sub_page h4 { padding-left: 0 !important;}
-  .sub_page ol {width:60% !important; text-align: left !important; }
-  .sub_page ul {width:60% !important; text-align: left !important; }
+  .sub_page h3, .pop_page h3 { margin:10px 10px !important; padding: 10px !important; width: 80% !important;  left: 5% !important;  }
+  .sub_page h4 {margin:10px 10px !important;padding-left: 0 !important;}
+  .sub_page ol {margin:10px 10px !important;text-align: left !important; }
+  .sub_page ul {margin:10px 10px !important;text-align: left !important; }
   .pop_page ol {width:90% !important; left:1% !important; text-align: left !important; padding: 15px 10px !important;}
   .pop_page ul {width:90% !important; left:1% !important; text-align: left !important; padding: 15px 10px !important;}
   .pop_page li { width:100% !important;  text-align: left !important;}
@@ -641,8 +639,8 @@ h3 {
 h4 {
   font-size: 20px;
   position: absolute;
-  left: 10%;
-  bottom: 15%;
+  /* left: 10%;
+  bottom: 15%; */
 }
 h5 {
   font-size: 16px;
@@ -1079,12 +1077,11 @@ a.facebook {
   padding-bottom: 50px;
 }
 .sub_page p {
-  width:70%;
   /* border:1px solid purple; */
   padding: 10px 15px;
   text-align: justify;
   position: relative;
-  left:15%;
+  margin: 10px 100px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -1113,7 +1110,7 @@ a.facebook {
   border-bottom: 1px solid #b73450;
   width: 50%;
   position: relative;
-  left: 15%;
+  margin: 10px 100px;
 }
 .pop_page h3 {
   color: #b73450;
@@ -1128,10 +1125,9 @@ a.facebook {
   text-align: left;
   font-size: 18px;
   padding: 10px;
-  width: 65%;
+  /* width: 65%; */
   position: relative;
-  left: 0;
-  transform: translateX(35%);
+  margin: 10px 100px;
   /* border: 1px solid yellow; */
 }
 .sub_page h5,
@@ -1142,7 +1138,7 @@ a.facebook {
   text-align: left;
   width: 50%;
   position: relative;
-  left: 20%;
+  margin: 10px 100px;
 }
 .sub_page h6 {
   font-size: 18px;
@@ -1150,14 +1146,17 @@ a.facebook {
   font-weight: 700;
 }
 .sub_page ul {
-  width:70%;
+  /* width:70%; */
   /* border:1px solid purple; */
-  padding: 5px 40px 15px 40px;
+  /* padding: 5px 40px 15px 40px; */
+  margin: 0 auto;
   text-align: justify;
-  position: relative;
-  left:15%;
+  /* position: relative; */
+  /* left:10%; */
   list-style-type: square;
+  margin: 10px 100px;
 }
+.sub_page span { font-weight:700; color: #b73450}
 .pop_page ul {
   text-align: justify;
   position: relative;
@@ -1172,7 +1171,7 @@ a.facebook {
   padding: 15px 40px;
   text-align: justify;
   position: relative;
-  left:15%;
+  /* left:10%; */
 }
 .sub_page li,
 .pop_page li {

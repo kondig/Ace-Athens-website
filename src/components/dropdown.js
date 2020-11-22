@@ -41,6 +41,7 @@ class Dropdown extends Component {
                   <Link className='dropdown-link' to={`/limbs`} onClick={this.dropdownitem.bind(this)}><li> {listItems[4]} </li></Link>
                   <Link className='dropdown-link' to={`/hifu`} onClick={this.dropdownitem.bind(this)}><li> {listItems[5]} </li></Link>
                   <Link className='dropdown-link' to={`/innovative-therapies`} onClick={this.dropdownitem.bind(this)}><li> {listItems[7]} </li></Link>
+                  <Link className='dropdown-link' to={`/regererative-med`} onClick={this.dropdownitem.bind(this)}><li> {listItems[8]} </li></Link>
                 </ul>
               </div>
           </div> ) : (

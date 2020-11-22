@@ -18,6 +18,7 @@ import Trauma from './Trauma';
 import Scars from './Scars';
 import Congenital from './Congenitalanomalies';
 import Hifu from './Hifu';
+import Regen from './Regen';
 
 const Main = () => (
   <main>
@@ -39,6 +40,7 @@ const Main = () => (
       <Route path='/trauma' component={Trauma}/>
       <Route path='/scars' component={Scars}/>
       <Route path='/congenital-anomalies' component={Congenital}/>
+      <Route path='/regererative-med' component={Regen}/>
     </Switch>
   </main>
 )
