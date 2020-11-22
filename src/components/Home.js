@@ -56,9 +56,11 @@ const Home = () => {
                 <li>Δημιουργία και διατήρηση άμεσου και φιλικού περιβάλλοντος για τους ενδιαφερόμενους και ασθενείς μας</li>
               </ul>
               <p> <u>Πλαστικοί Χειρουργοί</u> <br/><br/>
-                  Κώστας Παπαϊωάννου, MD, MSc, Επιστημονικός Διευθυντής <br/><br/>
+                  Κώστας Παπαϊωάννου, MD, MSc <br/>
+                  <span>Επιστημονικός Διευθυντής</span><br/><br/>
                   <u>Συνεργάτες</u> <br/><br/>
-                  Κώστας Πάτσης, MD <br/><br/>
+                  Κώστας Πάτσης, MD <br/>
+                  <span>Πλαστικός Χειρουργός</span><br/><br/>
                   Poseidonia Healthcare <br/>
                   <span>47a Eleftherias Avenue/Aradippou, Larnaca, 7102, Cyprus</span><br/><br/>
                   Alcokail Specialized Polyclinic <br/>

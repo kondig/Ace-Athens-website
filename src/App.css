@@ -1146,13 +1146,7 @@ a.facebook {
   font-weight: 700;
 }
 .sub_page ul {
-  /* width:70%; */
-  /* border:1px solid purple; */
-  /* padding: 5px 40px 15px 40px; */
-  margin: 0 auto;
   text-align: justify;
-  /* position: relative; */
-  /* left:10%; */
   list-style-type: square;
   margin: 10px 100px;
 }
@@ -1167,19 +1161,12 @@ a.facebook {
   position: relative;
 }
 .sub_page ol {
-  width:70%;
-  padding: 15px 40px;
-  text-align: justify;
-  position: relative;
-  /* left:10%; */
+    text-align: justify;
+    margin: 10px 100px;
 }
 .sub_page li,
 .pop_page li {
   padding: 10px 5px;
-  /* border: 1px solid black; */
-}
-.sub_page img {
-  /* width: 350px; */
 }
 .sub_page a {
   text-decoration: none;
@@ -1412,10 +1399,8 @@ a.facebook {
   left: 2%;
 }
 p.gdpr {
-  font-size: 10px !important;
-  width: 200px !important;
+  font-size: 0.7rem !important;
   position: relative;
-  left: 1%;
 }
 .form-link {
   text-decoration: none;
