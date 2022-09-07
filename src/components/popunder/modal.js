@@ -54,8 +54,6 @@ const useStyles = makeStyles((theme) => ({
         "&:after": {
             content:'""',
             position:'absolute',
-            top:0,
-            right:0,
             height:'3px',
             width:0,
             background: '#b73450',
@@ -83,6 +81,7 @@ const useStyles = makeStyles((theme) => ({
     title: {
         color: '#b73450',
         fontSize: '2rem',
+        padding: '5px 10px'
     },
 }));
 
@@ -133,9 +132,7 @@ function Modal(props) {
           {props.title}
         </DialogTitle>
         <DialogContent dividers>
-          <Typography gutterBottom>
             {props.text}
-          </Typography>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} className={classes.btn}>

@@ -8,6 +8,7 @@ import {Slider} from './slider/slider';
 import {Modal} from './popunder/modal';
 import {Phil} from './moreInfo';
 import {Mastos} from './moreInfo';
+import {LaserFast} from './moreInfo';
 
 import {Service} from './items/service';
 
@@ -92,6 +93,7 @@ const Home = () => {
                 <Service title='Μετεγκαυματικές ουλές' link='/burn'/>
                 <Service title='Ελάχιστα επεμβατικές θεραπείες' link='/slightly-invasive-therapies' subheader='με τη χρήση microneedling, fillers, Botox, νημάτων και μεσοθεραπείας' />
                 <Service title='Αισθητικές επεμβάσεις προσώπου και σώματος' subheader='Βλεφαροπλαστική, Ωτοπλαστική, Ρινοπλαστική, Πωγωνοπλαστική, Lifting προσώπου και λαιμού, Κοιλιοπλαστική, Λιποαναρρόφηση, lifting μηρών και γλουτών' link='/face-surgery'/>
+                <Service title='Laser F.A.S.T.' link='' />
             </div>
           </section>
           {/*<HostPopout title={'H φιλοσοφία μου'} text={<Phil />} buttonname={'H φιλοσοφία μου'} /> */}
@@ -112,7 +114,7 @@ const Home = () => {
               <Modal modaltitle={'ΠΕΡΙΣΣΟΤΕΡΑ'} title={'Μαστός'} text={<Mastos />} />
           </div>
           {/* <HostPopout title={''} text={<Mastos />} buttonname={'Περισσότερα'} /> */}
-          <div className="other" > </div>
+          {/*<div className="other"></div>
             <section className="other_text">
               <p> <strong> Πλαστική χειρουργική και Υπερβαρικό οξυγόνο </strong> <br/><br/>
                 Η χρήση του Υπερβαρικού Οξυγόνου στην Πλαστική Χειρουργική κερδίζει ολοένα και περισσότερο έδαφος στην Αμερική. Το Υπερβαρικό Οξυγόνο με τη χρήση καμπίνας μπορεί να προσφέρει σημαντικό όφελος στο τελικό αποτέλεσμα πλαστικών επεμβάσεων όπως η λιποαναρρόφηση, μειωτική και αυξητική μαστών, η κοιλιοπλαστική, τα face lifts καθώς και στην Επανορθωτική χειρουργική. Παράλληλα η εφαρμογή των χημικών peelings και των laser είναι ένα πεδίο όπου ο συνδυασμός τους με το Υπερβαρικό οξυγόνο μπορεί να αποβεί εξαιρετικά αποτελεσματικός. Αντίστοιχα εντυπωσιακά αποτελέσματα έχουμε στη μεταμόσχευση λίπους και στη χρήση αυξητικών παραγόντων για την επούλωση του τραύματος αλλά και την ανανέωση του προσώπου και την αντιμετώπιση της φωτογήρανσης.
@@ -129,7 +131,23 @@ const Home = () => {
              <br/><br/>
              <FontAwesome className='scrollArrowBack' onClick={executeScroll} name='angle-up' data-hover='πίσω στο μενού' spin={false} size='2x' />
              <br/><br/>
-            </section>
+            </section>*/}
+            <div className="other">
+                <div className="sectionTitle">
+                Τι είναι το Laser F.A.S.T. <span>(Fiber Assisted Skin Tightening)</span> <br/>και πώς δρα στο λίπος και το δέρμα;
+                </div>
+            </div>
+              <section className="other_text">
+               <p>
+                Εδώ και δύο χρόνια περίπου, εφαρμόζουμε στο ιατρείο μας μία νέα, πρωτότυπη και άκρως εντυπωσιακή θεραπεία με στόχο την αντιμετώπιση του χαλαρού και «κρεμασμένου» δέρματος σε σημεία στο πρόσωπο και το σώμα αλλά και του τοπικού λίπους.
+               </p>
+               <Modal modaltitle={'ΠΕΡΙΣΣΟΤΕΡΑ'}
+                      title={<p className="modal-title">Laser F.A.S.T. <br/><span>(Fiber Assisted Skin Tightening)</span></p>}
+                      text={<LaserFast />} />
+               <br/><br/>
+               <FontAwesome className='scrollArrowBack' onClick={executeScroll} name='angle-up' data-hover='πίσω στο μενού' spin={false} size='2x' />
+               <br/><br/>
+              </section>
           </div>
         </div>
     );

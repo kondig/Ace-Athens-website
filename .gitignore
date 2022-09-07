@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# images
+/src/images/*.png
+/src/images/*.jpg
+/src/components/img/*.png
+/src/components/img/*.jpg

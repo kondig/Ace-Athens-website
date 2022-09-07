@@ -47,23 +47,24 @@ class Header extends React.Component {
             <HashLink className="menu-item main" to="/#mastos" onClick={() => this.closeMenu()}>Μαστός</HashLink>
             <HashLink className="menu-item main" to="#contact" onClick={() => this.closeMenu()}>Επικοινωνία</HashLink>
             <p className="menu-mega-cat"> ΑΙΣΘΗΤΙΚΗ </p>
-            <a className="menu-item" href="/innovative-therapies" onClick={() => this.closeMenu()}>Πρωτοποριακές Θεραπείες </a>
+            <Link className="menu-item" to="/innovative-therapies" onClick={() => this.closeMenu()}>Πρωτοποριακές Θεραπείες</Link>
+            <Link className="menu-item" to="/regererative-med" onClick={() => this.closeMenu()}>Αναγεννητική Ιατρική</Link>
             <p className="menu-cat">ΠΡΟΣΩΠΟ</p>
-            <a className="menu-item--small" href="/non-invasive-therapies" onClick={() => this.closeMenu()}> Μη επεμβατικές θεραπείες</a>
-            <a className="menu-item--small" href="/slightly-invasive-therapies" onClick={() => this.closeMenu()}> Ελάχιστα επεμβατικές θεραπείες</a>
-            <a className="menu-item--small" href="/face-surgery" onClick={() => this.closeMenu()}> Χειρουργικές επεμβάσεις</a>
-            <a className="menu-item" href="/torso" onClick={() => this.closeMenu()}> ΚΟΡΜΟΣ</a>
-            <a className="menu-item" href="/limbs" onClick={() => this.closeMenu()}>ΑΚΡΑ</a>
-            <a className="menu-item" href="/hifu" onClick={() => this.closeMenu()}>HIFU</a>
-            <a className="menu-item" href="/regererative-med" onClick={() => this.closeMenu()}>Αναγεννητική Ιατρική</a>
+            <Link className="menu-item--small" to="/non-invasive-therapies" onClick={() => this.closeMenu()}>Μη επεμβατικές θεραπείες</Link>
+            <Link className="menu-item--small" to="/slightly-invasive-therapies" onClick={() => this.closeMenu()}>Ελάχιστα επεμβατικές θεραπείες</Link>
+            <Link className="menu-item--small" to="/face-surgery" onClick={() => this.closeMenu()}>Χειρουργικές επεμβάσεις</Link>
+            <Link className="menu-item" to="/torso" onClick={() => this.closeMenu()}>ΚΟΡΜΟΣ</Link>
+            <Link className="menu-item" to="/limbs" onClick={() => this.closeMenu()}>ΑΚΡΑ</Link>
+            <Link className="menu-item" to="/hifu" onClick={() => this.closeMenu()}>HIFU</Link>
+
             <p className="menu-mega-cat" onClick={() => this.closeMenu()}> ΕΠΑΝΟΡΘΩΤΙΚΗ </p>
-            <a className="menu-item" href="/breast-restoration" onClick={() => this.closeMenu()}>Αποκατάσταση Μαστού</a>
-            <a className="menu-item" href='/nevi&melanomas' onClick={() => this.closeMenu()}> Σπίλοι & Μελανώματα</a>
-            <a className="menu-item" href='/burn' onClick={() => this.closeMenu()}> Έγκαυμα</a>
-            <a className="menu-item" href='/trauma' onClick={() => this.closeMenu()}> Τραύμα & <br/> Ελλείματα Μαλακών μορίων</a>
-            <a className="menu-item" href='/skin-cancer' onClick={() => this.closeMenu()}>Καρκίνος Δέρματος</a>
-            <a className="menu-item" href='/scars' onClick={() => this.closeMenu()}> Ουλές</a>
-            <a className="menu-item" href='/congenital-anomalies' onClick={() => this.closeMenu()}> Συγγενείς Ανωμαλίες</a>
+            <Link className="menu-item" to="/breast-restoration" onClick={() => this.closeMenu()}>Αποκατάσταση Μαστού</Link>
+            <Link className="menu-item" to="/nevi&melanomas" onClick={() => this.closeMenu()}>Σπίλοι & Μελανώματα</Link>
+            <Link className="menu-item" to="/burn" onClick={() => this.closeMenu()}>Έγκαυμα</Link>
+            <Link className="menu-item" to="/trauma" onClick={() => this.closeMenu()}>Τραύμα & <br/> Ελλείματα Μαλακών μορίων</Link>
+            <Link className="menu-item" to="/skin-cancer" onClick={() => this.closeMenu()}>Καρκίνος Δέρματος</Link>
+            <Link className="menu-item" to="/scars" onClick={() => this.closeMenu()}>Ουλές</Link>
+            <Link className="menu-item" to="/congenital-anomalies" onClick={() => this.closeMenu()}>Συγγενείς Ανωμαλίες</Link>
           </Menu>
         </div>
         <header className="App-header">

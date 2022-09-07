@@ -15,10 +15,15 @@ const Footer = () => (
     </div>
     <div  id="contact" >
       <h3>
-        <a className="address" href="https://goo.gl/maps/jLDkkY5QKussVJXs5" target="_blank" rel="noopener noreferrer">
-          <FontAwesome className='address' name='building'spin={false}/> &nbsp; <span className="address-text"> Λεωφόρος Κηφισίας 27, Αθήνα, 11523, Αττική</span>
+        <a className="address a-container" href="https://goo.gl/maps/jLDkkY5QKussVJXs5" target="_blank" rel="noopener noreferrer">
+            <FontAwesome className='address' name='building'spin={false}/> &nbsp;
+            <div>
+                &nbsp;<span className="address-text">Λεωφόρος Κηφισίας 27, 11523, Αθήνα</span>
+                <br/>
+                &nbsp;<span className="address-text">Καραϊσκάκη 37, 35100, Λαμία</span>
+            </div>
         </a>
-        <br/><br/>
+        <br/>
         <FontAwesome className='phone' name='phone' spin={false}/> &nbsp; <a className="phone" href="tel:+302106471066">+30 210 64 71 066</a>
         <br/><br/>
         <FontAwesome className='mobile' name='mobile' size='2x' /> &nbsp; <a className="mobile" href="tel:+306944603863">+30 694 46 03 863</a>
